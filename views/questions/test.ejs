@@ -1,14 +1,13 @@
- <div class="large-12 columns index-container" ng-controller="CourseController">
+
 		<h1> For Testing </h1>
 		<p id="test"></p>
-	</div>
 <script>
 	function trythis() {
 		$.ajax({
-			url: 'http://osmose.soedar.com/api/questions/1'
+			url: 'http://osmose.soedar.com/api/courses/1'
 		}).done(function(data) {
 			console.log(data);
-			$('#test').html(data.data.question.title);
+			$('#test').html("DONE");
 		});
 	}
 </script>
