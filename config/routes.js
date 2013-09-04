@@ -84,6 +84,7 @@ module.exports.routes = {
 
   // View routes
   'get    /users/:id'           : 'UsersController.profile',
+  'get    /questions/test'      : 'Questions.test',
   'get    /questions/:id'       : 'Questions.details',
   'get    /courses/:id'         : 'Courses.details',
 

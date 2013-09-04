@@ -70,5 +70,9 @@ module.exports = {
                 og_title: question.title
             });
         });
+    },
+
+    test: function(req, res) {
+        res.view();
     }
 };

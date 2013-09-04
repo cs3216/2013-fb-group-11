@@ -1,0 +1,12 @@
+<h1> For Testing </h1>
+<p id="test"></p>
+<script>
+	function trythis() {
+		$.ajax({
+			url: 'http://osmose.soedar.com/api/questions/1'
+		}).done(function(data) {
+			console.log(data);
+			$('#test').html(data.data.question.title);
+		});
+	}
+</script>
